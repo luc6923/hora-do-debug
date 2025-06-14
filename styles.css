@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #222831;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #00adb5;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  color: #00adb5;
+}
+
+.product {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 20px;
+  color: #222831;
+}
+
+.product-description {
+  margin: 10px 0;
+  color: #606770;
+  font-size: 14px;
+}
+
+.product-price {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222831;
+}
+
+.product-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #00adb5;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #007a80;
+}
+
+.footer {
+  background-color: #222831;
+  color: #eeeeee;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px; /* Dá espaço entre os produtos e o footer */
+}
+
+@media (max-width: 600px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+}
